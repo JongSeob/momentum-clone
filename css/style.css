@@ -1,3 +1,71 @@
+@import "reset.css";
 .hidden {
   display: none;
+}
+
+.img--full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#clock {
+  font-size: 160px;
+  margin-top: 350px;
+}
+#greeting {
+  font-size: 60px;
+}
+
+#todo-form {
+  margin-top: 120px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+#todo-form input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 40px;
+}
+#todo-form input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+#quote {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#todo-list {
+  margin-top: 20px;
+}
+#todo-list li {
+  margin-bottom: 20px;
+}
+.todo-list__item {
+}
+.todo-list__btn {
+  margin-left: 10px;
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
